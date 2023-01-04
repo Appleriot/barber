@@ -59,6 +59,22 @@
 									Saturday: Open<br>
 									Sunday: Closed <br></p>
 							</div>
+							<p>Hit this button to book and pay for the appoiment</p>
+							<script src="https://booksy.net/widget/code.js?id=9178&amp;country=pl&amp;lang=pl"></script>
+
+<script>
+  const LoadScript = () => {
+    useEffect(() => {
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://booksy.net/widget/code.js?id=9178&country=pl&lang=pl';
+        script.async = true;
+        document.getElementById('script').appendChild(script);
+    }, []);
+
+    return  <div id='script'></div>
+}
+</script>
 						</div>
 					</section>
 
@@ -99,7 +115,7 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form action="https://form.taxi/s/z1wmtrbw" id="ft-form" method="POST" accept-charset="UTF-8">
+								<form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
   <fieldset>
     <legend>Contact Form</legend>
     <label>
@@ -160,7 +176,7 @@
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a>ddchandler79@gmail.com</a>
+										<a href="#">information@untitled.tld</a>
 									</div>
 								</section>
 								<section>
